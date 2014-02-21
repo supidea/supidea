@@ -42,6 +42,22 @@
     text-decoration: none;
     color: #C57725;
 }
+.seach-box input{
+    width: 160px;
+    height: 18px;
+    border-radius: 14px;
+    background: #222;
+    padding: 5px 10px;
+    box-shadow: 0 1px 1px rgba(255,255,255,.1),0 1px 1px rgba(0,0,0,.8) inset;
+    color: #60676D;
+    text-shadow: 0 1px 2px rgb(0,0,0);
+    -webkit-transition: width .5s ease-out;
+    -moz-transition: width .5s ease-out;
+    transition: width .5s ease-out;
+}
+.seach-box input:focus{
+    width: 220px;
+}
 
 .container{
     margin-top: 100px;
@@ -124,6 +140,9 @@
 .post-tags{
     background-position: -279px -318px
 }
+.post-tags a{
+    color: #959595;
+}
 .post-date{
     background-position: -276px -244px;
 }
@@ -201,7 +220,7 @@
     background: url("../images/slide.jpg");
     border-top: 8px solid rgb(25,27,30);
 }
-.footer .bd{
+.footer .footer-bd{
     height: 300px;
     padding-top: 20px;
 }
@@ -236,7 +255,7 @@
     color: #C57725;
 }
 
-.footer-widget .links li,.footer-widget .comments li{
+.footer-widget .links li,.footer-widget .comments li,.footer-widget .tags a{
     line-height: 36px;
     border-bottom: 1px solid rgb(25,27,30);
     box-shadow: 0 1px 0px rgb(64,65,66);
@@ -254,7 +273,18 @@
     margin-bottom: 8px;
     float: left;
 }
+/*底部标签模块*/
+.footer-widget .tags a{
+    float: left;
+    width: 50px;
+    overflow: hidden;
+    padding-right: 3px;
+}
+.footer-widget .tags a:nth-child(4n){
+    padding-right: 0;
+}
 
+/*底部读者墙模块*/
 .footer-widget .users li:nth-child(4n){
     margin-right: 0;
 }
@@ -265,10 +295,12 @@
     display: block;
     -webkit-transition: -webkit-transform .5s ease;
     -moz-transition: -moz-transform .5s ease;
+    transition: -moz-transform .5s ease;
 }
 .footer-widget .users li:hover img{
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 /*底部评论模块*/
@@ -281,10 +313,12 @@
     margin-right: 10px;
     -webkit-transition: -webkit-transform .5s ease;
     -moz-transition: -moz-transform .5s ease;
+    transition: -moz-transform .5s ease;
 }
 .footer-widget .comments li:hover img{
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 /*底部友情链接模块*/
@@ -295,14 +329,14 @@
     border-radius: 50%;
     background: rgb(40,43,46);
     box-shadow: 0 1px 1px rgba(255,255,255,.3),0 1px 1px rgba(0,0,0,.3) inset;
-    margin-right: 6px;
+    margin-right: 8px;
 }
 .footer-widget .links li:hover i{
     background: #C57725;
 }
 
-
-.footer .ft{
+/*底部*/
+.footer .footer-ft{
     height: 50px;
     background: url("../images/crbg.png") 0 0 repeat-x;
     padding-top: 5px;
