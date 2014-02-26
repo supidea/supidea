@@ -83,7 +83,6 @@
     font-weight: 600;
     text-align: center;
     position: relative;
-    /*background: url("../images/sprite.png") no-repeat 0 -384px;*/
 }
 .widgetcon .hd::before,.widgetcon .hd::after{
     width: 10px;
